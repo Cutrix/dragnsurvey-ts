@@ -6,21 +6,24 @@
       <main class="py-4 mb-5" style="color: red">
         <v-carousel hide-delimiters>
           <div class="container createSurveyContainer">
-            <div id="carouselCreateSurvey" class="carousel slide">
+            <div
+              id="carouselCreateSurvey"
+              class="carousel slide"
+            >
               <v-carousel-item>
                 <div class="carousel-item active">
-                  <div class="surveyCreateTitle p-5">
+                  <div class="surveyCreateTitle py-2">
                     Choisir une manière de créer votre questionnaire
                   </div>
 
                   <div
-                      class="col-sm-12 col-md-10 offset-md-1 row d-flex align-items-stretch justify-content-center"
+                    class="col-sm-12 col-md-10 offset-md-1 row d-flex align-items-stretch justify-content-center"
                   >
                     <div
-                        class="p-5 col-sm-4  d-flex align-items-stretch position-relative"
+                      class="p-5 col-sm-4  d-flex align-items-stretch position-relative"
                     >
                       <div
-                          class="surveyCreationType p-5 d-flex align-content-end flex-column"
+                        class="surveyCreationType p-5 d-flex align-content-end flex-column"
                       >
                         <p class="w-50 m-auto mb-3">
                           Créer un questionnaire en partant de zéro.
@@ -28,8 +31,8 @@
                         <img src="/img/dragon/create_survey.svg" />
                         <div class="mt-3">
                           <button
-                              class="btn btn-outline-success outline-dragnsurvey text-uppercase createSurveyBtn"
-                              data-create="self"
+                            class="btn btn-outline-success outline-dragnsurvey text-uppercase createSurveyBtn"
+                            data-create="self"
                           >
                             Créer un questionnaire
                           </button>
@@ -38,10 +41,10 @@
                     </div>
 
                     <div
-                        class=" p-5 col-sm-4 d-flex align-items-stretch position-relative"
+                      class=" p-5 col-sm-4 d-flex align-items-stretch position-relative"
                     >
                       <div
-                          class="surveyCreationType p-5 d-flex align-content-end flex-column"
+                        class="surveyCreationType p-5 d-flex align-content-end flex-column"
                       >
                         <p class="w-50 m-auto mb-3">
                           Dupliquer un de vos questionnaires.
@@ -51,8 +54,8 @@
 
                         <div class="mt-3">
                           <button
-                              class="btn btn-outline-success outline-dragnsurvey text-uppercase createSurveyBtn"
-                              data-create="copy"
+                            class="btn btn-outline-success outline-dragnsurvey text-uppercase createSurveyBtn"
+                            data-create="copy"
                           >
                             Copier un questionnaire
                           </button>
@@ -61,21 +64,21 @@
                     </div>
 
                     <div
-                        class=" p-5 col-sm-4 d-flex align-items-stretch position-relative"
+                      class=" p-5 col-sm-4 d-flex align-items-stretch position-relative"
                     >
                       <div
-                          class="surveyCreationType p-5 d-flex align-content-end flex-column"
+                        class="surveyCreationType p-5 d-flex align-content-end flex-column"
                       >
                         <p class="w-50 m-auto mb-3">
                           Créer à partir d&#039;un modèle Drag&#039;n Survey
                         </p>
                         <img
-                            src="https://app.dragnsurvey.com/img/dragon/choose_template.svg"
+                          src="https://app.dragnsurvey.com/img/dragon/choose_template.svg"
                         />
                         <div class="mt-3">
                           <button
-                              class="btn btn-outline-success outline-dragnsurvey text-uppercase createSurveyBtn"
-                              data-create="model"
+                            class="btn btn-outline-success outline-dragnsurvey text-uppercase createSurveyBtn"
+                            data-create="model"
                           >
                             Choisir un modèle
                           </button>
@@ -93,62 +96,58 @@
               <v-carousel-item>
                 <div class="p-5 h-100">
                   <div class="d-flex flex-row-reverse">
-                      <span data-dismiss="form" class="dismissCreateForm"
+                    <span data-dismiss="form" class="dismissCreateForm"
                       ><i class="fal fa-times"></i
-                      ></span>
+                    ></span>
                   </div>
                   <div class="surveyCreateTitle">
                     Créez votre questionnaire
                   </div>
                   <form
-                      class="needs-validation"
-                      novalidate
-                      action="https://app.dragnsurvey.com/survey/add"
-                      method="post"
-                      id="createSurveyForm"
+                    class="needs-validation"
+                    novalidate
+                    action="https://app.dragnsurvey.com/survey/add"
+                    method="post"
+                    id="createSurveyForm"
                   >
                     <input
-                        type="hidden"
-                        name="_token"
-                        value="d1rSb2PXuMrcPMv3TiNM2UWUyptkmHdru8MLwA2Q"
+                      type="hidden"
+                      name="_token"
+                      value="d1rSb2PXuMrcPMv3TiNM2UWUyptkmHdru8MLwA2Q"
                     />
                     <input type="hidden" name="type" />
                     <div class="form-group">
                       <label for="title">Titre du questionnaire</label>
                       <input
-                          type="text"
-                          class="form-control"
-                          id="title"
-                          name="title"
-                          aria-describedby="titleHelp"
-                          placeholder="Titre du questionnaire"
-                          value=""
-                          required
+                        type="text"
+                        class="form-control"
+                        id="title"
+                        name="title"
+                        aria-describedby="titleHelp"
+                        placeholder="Titre du questionnaire"
+                        value=""
+                        required
                       />
                       <small id="titleHelp" class="form-text text-muted"
-                      >Le titre de votre questionnaire doit être
-                        unique</small
+                        >Le titre de votre questionnaire doit être unique</small
                       >
                       <div class="invalid-feedback">
-                        Vous devez renseigner un titre pour votre
-                        questionnaire
+                        Vous devez renseigner un titre pour votre questionnaire
                       </div>
                     </div>
 
                     <div class="form-group row">
                       <div class="surveys_list d-none col-sm-4">
-                        <label for=""
-                        >Choisir un questionnaire à copier</label
-                        >
+                        <label for="">Choisir un questionnaire à copier</label>
                         <select
-                            class="form-control"
-                            name="copyId"
-                            id="copySurveySelect"
+                          class="form-control"
+                          name="copyId"
+                          id="copySurveySelect"
                         >
                         </select>
                         <div
-                            class="btn btn-dragnsurvey w-100 d-block mt-5 surveyCopyOrModelCreateBtn"
-                            data-action="submit"
+                          class="btn btn-dragnsurvey w-100 d-block mt-5 surveyCopyOrModelCreateBtn"
+                          data-action="submit"
                         >
                           Créer un questionnaire
                         </div>
@@ -157,9 +156,9 @@
                       <div class="col-sm-4 d-none categories_list">
                         <label for="">Choisir la catégorie du modèle</label>
                         <select
-                            class="form-control mb-3"
-                            name="modelCategorySelect"
-                            id="modelCategorySelect"
+                          class="form-control mb-3"
+                          name="modelCategorySelect"
+                          id="modelCategorySelect"
                         >
                         </select>
 
@@ -168,8 +167,8 @@
                         <div class="chooseModelsByCategoryWrapper"></div>
 
                         <div
-                            class="btn btn-dragnsurvey w-100 d-block mt-5 surveyCopyOrModelCreateBtn"
-                            data-action="submit"
+                          class="btn btn-dragnsurvey w-100 d-block mt-5 surveyCopyOrModelCreateBtn"
+                          data-action="submit"
                         >
                           Créer un questionnaire
                         </div>
@@ -183,8 +182,8 @@
 
                     <div class="d-flex align-content-start flex-wrap">
                       <div
-                          class="btn btn-dragnsurvey w-50 mx-auto d-none mt-5 surveySelfCreateBtn"
-                          data-action="submit"
+                        class="btn btn-dragnsurvey w-50 mx-auto d-none mt-5 surveySelfCreateBtn"
+                        data-action="submit"
                       >
                         Créer un questionnaire
                       </div>
