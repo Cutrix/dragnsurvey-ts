@@ -280,7 +280,7 @@
                         </select>
 
                         <input type="hidden" name="modelId" />
-                        <label for="">Choisir un modèle</label>
+                        <label>Choisir un modèle</label>
                         <div class="chooseModelsByCategoryWrapper"></div>
 
                         <div
