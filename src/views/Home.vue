@@ -72,15 +72,26 @@
 
       <main class="py-4 mb-5">
         <div class="container">
-
-
           <div class="row">
             <div  class="col-sm-9">
               <div class="d-flex col-sm-12 surveyNavigation p-0 surveysMasterNav" >
                 <a href="#" class="flex-fill step current" > Mes questionnaires</a>
                 <a href="https://app.dragnsurvey.com/master" class="flex-fill step " > Gestion des utilisateurs</a>
               </div>
-              <div id="dnsSurveysListContainer"></div>
+              <div id="dnsSurveysListContainer">
+                <table class="table" id="dnsSurveysList">
+                  <thead>
+                  <tr>
+                    <th style="width:450px">Titre</th>
+                    <th>Créé le</th>
+                    <th>Réponses</th>
+                    <th data-priority="1">Actions</th>
+                  </tr>
+                  </thead>
+                  <tbody data-dns-surveys-table-body="">
+                  </tbody>
+                </table>
+              </div>
             </div>
             <div id="dnsLogoContainer" class="col-sm-3"></div>
           </div>
@@ -123,14 +134,21 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="js">
 import { Component, Vue } from "vue-property-decorator";
 import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
+import VdtnetTable from 'vue-datatables-net';
 
-@Component({
+import 'datatables.net-bs4'
+export default {
   components: {
-    HelloWorld
+    // eslint-disable-next-line vue/no-unused-components
+    VdtnetTable
+  },
+  data() {
+    return {
+      items: []
+    }
   }
-})
-export default class Home extends Vue {}
+}
 </script>
