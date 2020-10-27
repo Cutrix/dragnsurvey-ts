@@ -4,7 +4,7 @@
       <haut />
 
       <main class="py-4 mb-5" style="color: red">
-        <v-carousel hide-delimiters>
+        <v-carousel hide-delimiters :show-arrows="true" ref="carousel">
           <div class="container createSurveyContainer">
             <div
               id="carouselCreateSurvey"
@@ -253,7 +253,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { Vue, Component } from "vue-property-decorator";
 import Haut from "@/components/Header.vue";
 
