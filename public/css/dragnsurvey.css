@@ -1,0 +1,1718 @@
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url(/fonts/Gotham-Bold.otf),
+         url(/fonts/GothamBold.ttf);
+}
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url(/fonts/Gotham_Book_Regular.otf),
+         url(/fonts/GothamBook.ttf);
+}
+@font-face {
+    font-family: 'Gotham-Light';
+    src: url(/fonts/Gotham-Light.otf),
+         url(/fonts/GothamLight.ttf);
+
+}
+@font-face {
+    font-family: 'Avenir-Next';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/fonts/AvenirNext/AvenirNext-Regular-08.ttf');
+}
+@font-face {
+    font-family: 'Avenir-Next-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/fonts/AvenirNext/AvenirNext-Bold-01.ttf');
+}
+@font-face {
+    font-family: 'Avenir-Next-Demi-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/dragnsurvey/fonts/AvenirNext/AvenirNext-DemiBold-03.ttf');
+}
+@media (min-width: 1300px) {
+    .container {
+        max-width: 1300px;
+    }
+    .sharedReport .container{
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1500px) {
+    .container {
+        max-width: 1500px;
+    }
+    .sharedReport .container{
+        max-width: 1140px;
+    }
+}
+body{
+    font-family: Avenir-Next, Arial;
+}
+main{
+    position: relative;
+}
+.dns-logo-position-button{
+    background: none;
+    border: none;
+}
+.dns-logo-position-button.active{
+    background: #219B6F;
+    border-radius: 4px;
+    color: white;
+}
+.dns-logo-delete-button{
+    background: none;
+    border: none;
+    color: #169C6E;
+    font-size: 17px;
+}
+.font-weight-demi-bold{
+    font-family: 'Avenir-Next-Demi-Bold';
+    font-size: 15px;
+}
+.lightBtn{
+    font-family: Avenir-Next;
+    font-size: 14px;
+}
+#surveyPage .gu-transit, #surveyPage .list-group-item, #surveyPage .dnsDatabaseQuestion{
+    margin-bottom: 2rem;
+}
+.container{
+    position: relative;
+}
+.hoverPointer{
+    cursor: pointer;
+}
+.no-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+.relative{
+    position: relative;
+}
+.dnsAbsBtn{
+    position: absolute;
+    bottom: 0;
+}
+.logo_dns{
+    width: 200px;
+}
+a.svg {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+a.svg:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.dns-loading-gif{
+    position: fixed;
+    bottom: 30%;
+    right: 20%;
+    font-size: 8rem;
+    color: #169C6E;
+}
+.dragnsurvey-color{
+    color: #169C6E;
+}
+.planOrderHeader {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.main-nav-link{
+    font-family: Avenir-Next;
+    font-size: 17px;
+    letter-spacing: 0;
+    color: #000000;
+}
+.main-nav-link a{
+    color: #000000;
+}
+.main-nav-link-active a{
+    color: #169C6E;
+}
+.createSurveyLink{
+    background: #C3ECDE;
+    border-radius: 0.25rem;
+    font-family: Avenir-Next-Demi-Bold;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    color: #159C6E;
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    box-shadow: 0px 9px 23px rgba(195, 236, 222, 0.75);
+}
+.createSurveyLink a, .createSurveyLink a:hover, .createSurveyLink a:focus{
+    color: #159C6E;
+    text-decoration: none;
+}
+.createSurveyLink:hover, .createSurveyLink:focus{
+
+    background: #169C6E;
+}
+.createSurveyLink:hover a, .createSurveyLink:focus a{
+    color: white;
+}
+.userIconDpdwn{
+    font-size: 2rem;
+}
+.userName{
+    font-size: 20px;
+}
+.surveysListHeader{
+    font-family: Avenir-Next, Arial;
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+    margin-bottom: 2rem;
+}
+#dnsUsersListContainer .surveysListHeader{
+    margin-bottom: 12px;
+}
+.dragnsurvey-selected-user-background{
+    background: #C3ECDE;
+}
+.surveyCreateTitle{
+    font-family: Avenir-Next-Demi-Bold;
+    font-size: 35px;
+    line-height: 48px;
+    text-align: center;
+    color: #169C6E;
+}
+.createSurveyContainer label{
+    font-family: Avenir-Next;
+    font-size: 18px;
+    line-height: 24px;
+}
+#surveyTitleContainer{
+    font-family: Avenir-Next, Arial;
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+    margin-bottom: 1.5rem;
+}
+.dragnsurvey-card-header {
+    font-family: Avenir-Next-Demi-Bold;
+    font-size: 18px;
+}
+.dnsEditSurveyTitle{
+    font-size: 15px;
+    cursor: pointer;
+}
+[data-dns-surveys-table-body] td p{
+    margin-bottom: 0;
+}
+[data-dns-surveys-table-body] tr, [data-dns-collectors-table-body] tr{
+    background: white;
+}
+.toggleUserBtn{
+    color: #169C6E;
+    cursor: pointer;
+    font-size: 1.2rem;
+    top: -6px;
+    position: relative;
+}
+a[data-trigger-show-user]{
+    text-decoration: none;
+    color: black;
+}
+a[data-trigger-show-user]:hover{
+    text-decoration: underline;
+    color: #169C6E;
+}
+.surveysMasterNav a:hover, .surveysMasterNav a:focus{
+    text-decoration: none;
+}
+.surveyNavigation .step, .reportTypeNavigation .step, .diffusionTypeNavigation .step, .addressBookImportNavigation .step{
+    background: #EBEFF2;
+    border: 1px solid #DEE2E6;
+    font-family: Avenir-Next;
+    font-size: 16px;
+    color: #525252;
+    letter-spacing: 0;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+.surveyNavigation .step.current, .reportTypeNavigation .step.current, .diffusionTypeNavigation .step.current, .addressBookImportNavigation .step.current{
+    background: #FFFFFF;
+    border-bottom: 5px solid #169C6E;;
+    color: #169C6E;
+    cursor: initial;
+}
+.reportTypeNavigation .step:hover:not(.current) {
+    text-decoration: underline;
+}
+.surveysMasterNav{
+    padding: 0;
+    margin-bottom: 2rem;
+}
+.surveysMasterNav .step{
+    font-family: Avenir-Next, Arial;
+    font-size: 17px;
+}
+.reportDnsAlertWrapper{
+    cursor: pointer;
+}
+.reportDnsAlertWrapper:hover{
+    text-decoration: underline;
+}
+.dnsReportQuestionNumbering{
+    font-size: 28px;
+    color: #169C6E;
+    text-transform: capitalize;
+}
+.dnsReportQuestionTitle{
+    background: #d1eae1 none repeat scroll 0 0;
+    color: black;
+    font-size: 18px;
+}
+.reportTypeNavigation .step{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.graph-active{
+    color: #169C6E
+}
+.dnsReportGraphTypeTable{
+    font-family: Avenir-Next;
+}
+.dnsReportGraphTypeTable td{
+    border: none;
+    cursor: pointer;
+}
+.surveyCreatePrevieWrapper{
+    max-height: 640px;
+
+}
+#surveyPage{
+    padding-bottom: 150px;
+    position: relative;
+}
+.dnsTableUsersList, .dnsTable tbody{
+    background: white;
+}
+#dnsSurveysList, #dnsCollectorsList, .dnsTable{
+    font-family: Avenir-Next, Arial;
+}
+#dnsSurveysList .font-weight-bold, #dnsCollectorsList .font-weight-bold{
+    font-family: Avenir-Next-Demi-Bold;
+    font-size: 16px;
+}
+.dnsTableUsersLis.table{
+    margin-top: 6px;
+}
+#dnsSurveysList thead, #dnsCollectorsList thead, .dnsTableUsersList thead, .dnsTable thead, #contactsListTable thead{
+    background: #169C6E;
+    font-family: Avenir-Next-Demi-Bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+#dnsSurveysList td, #dnsCollectorsList td, .dnsTable td{
+    vertical-align: middle;
+}
+table.dnsSurveysListActionTable, table.dnsCollectorsListActionTable{
+    margin-bottom: 0;
+    font-size: 1.1rem;
+
+}
+table.dnsSurveysListActionTable td,  table.dnsCollectorsListActionTable td{
+    border-top: none;
+}
+
+.dnsCollectorsListActionTable td{
+    cursor: pointer;
+    font-size: 1rem;
+}
+.dnsSurveyActionIcon, .dnsUsersActionIcon{
+    color: #169C6E;
+}
+.surveyEditColor:hover{
+    color: #58B19F;
+}
+.surveySendColor:hover{
+    color: #F0DC61;
+}
+.surveyReportColor:hover{
+    color: #B33771;
+}
+.userUnlinkIcon:hover{
+    cursor: pointer;
+    color: #0056b3;
+}
+
+.questionOngletsContainer{
+    width: 100%;
+}
+.survey-conception-footer-btns{
+    margin-top: 1rem;
+}
+.survey-conception-footer-btns a{
+    width: 100%;
+}
+@media (max-width: 992px){
+    .pagination li:not(:first-child){
+        display: none;
+    }
+    .pagination li:last-child{
+        display: block;
+    }
+    .pagination li.active{
+        display: block;
+    }
+}
+@media (min-width: 992px){
+    #surveyPage:after{
+
+        content: attr(data-after);
+        white-space: pre;
+        color: #169C6E;
+        border: 1px dashed #CBCBCB;
+        border-radius: 6px;
+        width: 92%;
+        padding: 3rem;
+        position: absolute;
+        text-align: center;
+        bottom: 5px;
+        z-index: -1;
+    }
+
+    .questionOngletsContainer{
+        width: auto;
+    }
+    .survey-conception-footer-btns{
+        padding-right: 6.2rem;
+    }
+    .survey-conception-footer-btns a{
+        width: auto;
+    }
+}
+
+#surveyPageOptions{
+    margin-left:0;
+    margin-right: 0;
+}
+.question{
+    font-family: Avenir-Next, Arial;
+}
+.question .content{
+    background: #FFFFFF;
+    box-shadow: 0 1px 7px 0 rgba(0,0,0,0.09);
+    border-radius: 1px;
+    padding-right: 0;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+}
+.question .content:hover{
+    cursor: move;
+}
+.ck-content:hover{
+    cursor: text;
+}
+.tabHover{
+    background: #F97F51;
+}
+.dnsHide{
+    display: none !important;
+}
+.optionBlock{
+    border: 1px solid black;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+#dnsLogoContainer{
+    padding-top: 0.7rem;
+}
+#dnsCollectorsList_wrapper {
+    margin-top: 4px;
+}
+.dnsDropzone{
+    width: 190px;
+    height: 190px;
+    border: 1px solid black;
+    display: table;
+}
+.imageItem .dnsDropzone{
+    width: 190px;
+    height: 190px;
+}
+.dropzone .dz-preview:hover .dz-image img {
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+    -webkit-filter: none;
+    filter: none;
+}
+.dz-details,.dz-size{
+    display: none;
+}
+.dropzone .dz-preview .dz-image, .dz-preview.dz-processing.dz-image-preview [data-dz-thumbnail]{
+    height: auto;
+    max-height: 120px;
+    margin: auto;
+}
+.dropzone .dz-preview{
+    min-height: auto;
+    display: table-cell;
+    margin: auto;
+    vertical-align: middle;
+}
+.dnsLogoManager.dropzone .dz-preview{
+    display: block;
+}
+.dnsLogoManager.dropzone{
+    border: 1px dashed #CBCBCB;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color: #169C6E;
+}
+.dnsLogoManager.dropzone.logo-limit{
+    border: 1px dashed #67A1F6;;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color: #67A1F6;
+}
+
+.dropzone .dz-preview.dz-file-preview .dz-image, .dropzone .dz-preview .dz-image{
+    border-radius: 0;
+}
+
+.labelsSelect{
+    min-width: 100px;
+}
+.labelsSelectWrapper{
+    min-width: 300px;
+}
+.labelConfigurationContainer{
+    min-width: 30rem;
+}
+.dnsConditionnalDisplayContainer{
+    min-width: 600px;
+}
+.timerDpdwnMenu{
+    width: 22rem;
+}
+
+.dnsVisible{
+    display: initial;
+}
+.dnsInvisible{
+    display: none;
+}
+#toolbox.sticky-top{
+    top: 30px;
+}
+.dns-modal .modal-header{
+    font-family: Avenir-Next-Demi-Bold;
+    line-height: 32px;
+    border-bottom: none;
+}
+.dns-modal .modal-title{
+    font-size: 24px;
+}
+.dns-modal .modal-body{
+    font-family: Avenir-Next;
+    font-size: 17px;
+    line-height: 24px;
+}
+.dns-btn-danger{
+    font-family: Avenir-Next;
+    font-size: 18px;
+    line-height: 24px;
+}
+.dns-modal .btn, .createSurveyContainer .btn, .loginCard .btn{
+    font-family: Avenir-Next;
+    font-size: 18px;
+    line-height: 24px;
+}
+.dns-modal .btn.btn-dragnsurvey, .createSurveyContainer .btn.btn-dragnsurvey{
+    box-shadow: 0px 9px 23px rgba(22, 156, 110, 0.344515);
+}
+.btn-dragnsurvey:hover, .btn-dragnsurvey:focus{
+    color: white;
+    cursor: pointer;
+    background: #0D6346;
+}
+
+.dns-modal .modal-footer{
+    border-top: none;
+}
+.dnsToolBoxCategory{
+    background: #169C6E;
+    color: white;
+    cursor: pointer;
+    padding-left: 1.3rem !important;
+    font-family: Avenir-Next-Demi-Bold;
+}
+.toolboxContainer{
+    font-family: Avenir-Next;
+}
+.toolBoxList{
+    padding-right: 0;
+    padding-left: 0;
+}
+.toolBoxList .list-group-item{
+    cursor: move;
+}
+.toolBoxList .list-group-item:hover{
+    background: #F5F5F5;
+}
+.dnsToolBoxOptionsTable{
+    width: 100%;
+}
+.categoryContainer{
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.dnsDatabaseQuestion{
+    background: white;
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 8px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    width: 100%;
+}
+.dnsDatabaseQuestion:hover{
+    background: #F5F5F5;
+}
+.categoryQuestions{
+    max-height: 500px;
+    overflow-y: scroll;
+}
+[name="questionsDatabaseCategorySelect"]{
+    background: rgba(22, 156, 110, 0.5);
+}
+#dnsQuestionsCategoryTable_filter{
+    text-align: center;
+    padding-top: 0.5rem;
+}
+#dnsQuestionsCategoryTable thead{
+    display: none;
+}
+.categoryQuestions .dataTables_paginate{
+    text-align: center !important;
+    display: flex;
+    justify-content: space-between;
+}
+.categoryQuestions .dataTables_paginate span:not(.ellipsis) {
+    text-align: center !important;
+    flex: 3 0px;
+    justify-content: space-evenly;
+    display: flex;
+}
+.categoryQuestions .paginate_button{
+    cursor: pointer;
+    color: black;
+}
+.categoryQuestions .paginate_button.current{
+    color: #169C6E;
+    font-family: Avenir-Next-Demi-Bold;
+}
+.categoryQuestions .top{
+    background: white;
+    padding: 1rem;
+    margin-bottom: 0.6rem;
+    border-radius: 10px;
+}
+.categoryQuestions .table th, .categoryQuestions .table td{
+    padding: 0;
+    border-top: none;
+}
+#dnsQuestionsCategoryTable{
+    margin-top: 0 !important;
+}
+.dnsDatabaseQuestion{
+    cursor: move;
+}
+#settingTools .list-group-item{
+    cursor: initial;
+}
+#pagesList{
+    background: #169C6E;
+    border-radius: 1px;
+    color: white;
+    font-family: Avenir-Next;
+}
+.selectedPage{
+    background: #0D6346;
+}
+.pageTab{
+    cursor: pointer;
+}
+.pageTab:not(.selectedPage):hover{
+    background: #58B19F;
+}
+.currentPageOptions{
+    cursor: pointer;
+}
+.question input.form-control{
+    background: #F5F5F5;
+    line-height: 2.5;
+    border: none;
+}
+.question [data-editor]{
+    background: #F5F5F5;
+}
+.question [data-editor].form-control{
+    line-height: 1;
+}
+.question strong, .dnsReportFilterItem strong{
+    font-family: Avenir-Next-Demi-Bold;
+}
+.ck-content:before{
+    content : attr(data-before);
+    position: absolute;
+    top: 12px;
+    color: #B8B8B8;
+}
+.editor-placeholder{
+    color: #B8B8B8;
+}
+[data-editor].form-control{
+    border: none;
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+[data-editor].form-control{
+    cursor: text;
+}
+[data-editor] p{
+    margin-bottom: 0;
+}
+.dnsOptionQuestion{
+    cursor: pointer;
+}
+.questionOngletsOptions{
+    padding: 0;
+}
+.questionOngletOption{
+    background: #EBEFF2;
+    border: 1px solid #DEE2E6;
+    box-shadow: 0 1px 7px 0 rgba(0,0,0,0.09);
+    line-height: 1;
+    width: 33%;
+}
+.questionItem{
+    border: 1px solid #DEE2E6;
+    padding: 1rem;
+}
+@media (min-width: 992px){
+    .questionOngletOption {
+        width: 33px;
+    }
+    .questionItem{
+        border: none;
+        padding: 0;
+    }
+}
+.content{
+    position: relative;
+}
+.bodyWrapper{
+    font-family: Avenir-Next, Arial;
+    font-size: 14px;
+}
+.bodyWrapper .form-control{
+    height: auto;
+}
+.optionsContainer{
+    font-family: "Gotham-Light";
+    padding-left:0;
+    padding-right: 0;
+    font-size: 11px;
+}
+@media (min-width: 1300px) {
+
+    .optionsContainer {
+        font-size: 13px;
+    }
+}
+.optionsTrigger{
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+    color: #999999;
+    font-size: 12px;
+}
+.options{
+
+    background: #FFFFFF;
+
+}
+.validateChangeTitle{
+    cursor: pointer;
+    color: #169C6E;
+}
+.dnsClose{
+    cursor: pointer;
+    color: #169C6E;
+    z-index: 10;
+    position: relative;
+}
+.dnsQuestionOptionLine{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: left;
+    padding-left: 0.5rem;
+    min-height: 50px;
+    background: white;
+}
+.dnsQuestionOptionLine:hover:not([data-option="mandatory"]):not(.allowedAnswers):not(.displayAnswers){
+    background: #F5F5F5;
+}
+.dnsQuestionOptionLine label{
+    margin-bottom: 0;
+}
+.question.yesNo{
+    border-left: 6px solid #B8E565;
+}
+.question.choice{
+    border-left: 6px solid #58B19F;
+}
+.question.rate{
+    border-left: 6px solid #F97F51;
+}
+.question.cursor{
+    border-left: 6px solid #D83641;
+}
+.question.freeField{
+    border-left: 6px solid #B33771;
+}
+.question.dropdown{
+    border-left: 6px solid #F0DC61;
+}
+.question.percentage{
+    border-left: 6px solid #A981C5;
+}
+.question.ranking{
+    border-left: 6px solid #24C7F1;
+}
+.question.image{
+    border-left: 6px solid #3A3A96;
+}
+.question.image_choice{
+    border-left: 6px solid #098AFF ;
+}
+.question.image_rate{
+    border-left: 6px solid #3A3A96 ;
+}
+.question.spreadsheet_choice{
+    border-left: 6px solid #EE7EB3 ;
+}
+.question.spreadsheet_freeField{
+    border-left: 6px solid #CC0033;
+}
+.question.hidden{
+    border-left: 6px solid #330099;
+}
+.question.textZone{
+    border-left: 6px solid #CAD3C8;
+
+}
+.questionIcons{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+}
+.questionIcons img{
+    width: 15px;
+}
+.slider_design{
+    width: 50%;
+}
+.imageItemWrapper{
+    padding: 1rem;
+}
+.imageItem{
+    box-shadow: 0 1px 7px 0;
+    padding: 1rem;
+
+}
+.itemOptions, .addItemActionsWrapper{
+    padding-left:0;
+}
+.itemTrigger{
+    color: #B8B8B8;
+}
+.addItemActionsWrapper{
+    color: #169C6E;
+}
+.plusItemChoice, .plusOther, .plusItemNoOpinion{
+    cursor: pointer;
+}
+.outline-dragnsurvey{
+    color: #169C6E;
+    border-color: #169C6E;
+}
+
+.outline-dragnsurvey:hover {
+    background-color: #169C6E;
+    border-color: #169C6E;
+}
+.outline-dragnsurvey:not(:disabled):not(.disabled).active, .outline-dragnsurvey:not(:disabled):not(.disabled):active, .show>.outline-dragnsurvey.dropdown-toggle{
+    background-color: #169C6E;
+    border-color: #169C6E;
+}
+.mailOptionsBtn {
+    border-radius: 1rem;
+    border: 1px solid #169C6E;
+    background: white;
+}
+.mailOptionsBtn:hover, .mailOptionsBtn:focus{
+    background: #169C6E;
+    color: white;
+}
+.show>.outline-dragnsurvey.dropdown-toggle{
+    color: black;
+}
+.round-outline-dragnsurvey{
+    background: #C3ECDE;
+    border-radius: 1rem;
+    border: none;
+}
+
+[data-dns-trigger="redirectDpdwn"]{
+    font-size: 12px;
+}
+.page[data-dns-trigger="redirectDpdwn"]{
+    font-size: 14px;
+}
+.dropdown-menu.show {
+    z-index: 1020;
+}
+.createSurveyContainer{
+    background: #FFFFFF;
+    box-shadow: 0 1px 7px 0 rgba(0,0,0,0.09);
+    border-radius: 1px;
+}
+.createSurveyTitle{
+    font-family: Avenir-Next-Demi-Bold;
+    font-size: 18px;
+    color: #169C6E;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+}
+.surveyCreationType{
+    background: #FFFFFF;
+    box-shadow: 0 3px 15px 0 rgba(0,0,0,0.07);
+    border-radius: 5px;
+    font-family: Avenir-Next;
+    font-size: 14px;
+    color: #373737;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 20px;
+}
+.createSurveyBtn{
+    font-family: Avenir-Next-Demi-Bold;
+}
+.dismissCreateForm{
+    cursor: pointer;
+    margin-top: -15px;
+}
+#pagesList{
+    margin-bottom: 0;
+}
+#surveyPageOptions{
+    margin-bottom: 2rem;
+    background: white;
+    padding: 1rem;
+    font-family: Avenir-Next, Arial;
+}
+ul#settingTools{
+    overflow-y: scroll;
+    max-height: 500px;
+}
+.dnsQuestionNumber{
+    padding-top: 5px;
+}
+.deleteItem{
+    cursor: pointer;
+}
+.btn-dragnsurvey{
+    background: #169C6E;
+    border-radius: 1px;
+    color: white;
+    font-family: Avenir-Next-Demi-Bold;
+    font-size: 14px;
+    border-radius: 5px;
+
+}
+.dns-green-button{
+    background: #169C6E;
+    border-radius: 5px;
+    color: white;
+    font-family: Avenir-Next-Demi-Bold;
+    font-size: 14px;
+}
+.dns-green-button:hover, .dns-green-button:focus{
+    color: white;
+}
+.btn-danger-dragnsurvey{
+    background: #EA5757;
+    border-radius: 1px;
+    color: white;
+    font-family: Avenir-Next-Demi-Bold;
+    font-size: 14px;
+}
+.btn.btn-dns-options-dropdown{
+    background: white;
+    color: black;
+    border: 1px solid #ced4da;
+    font-size: 12px;
+}
+.questionItem [data-question-item-type]{
+    height: auto;
+}
+.dnsFreeDpdwn{
+    width: 55px;
+}
+.dnsExportPanelHeader{
+    font-family: Avenir-Next-Demi-Bold;
+    color: #169C6E;
+    background: white;
+    margin-bottom: 1rem;
+}
+.dnsExportDownloadLink{
+    font-family: Avenir-Next;
+    color: black;
+    cursor: pointer;
+}
+.dnsExportDownloadLink:hover{
+    text-decoration: underline;
+    color: black;
+}
+.downloadIcon{
+    color: #169C6E;
+    font-size: 1rem;
+}
+.dnsReportPanelHeading{
+    background: #169C6E;
+    color: white;
+    font-family: Avenir-Next-Demi-Bold;
+    padding: 0.8rem;
+}
+.dnsReportSummaryBold{
+    font-family: Avenir-Next-Demi-Bold;
+}
+
+.dnsReportPanelBody{
+    background: #FFFFFF;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+}
+.dnsReportSummary{
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.08);
+    border-radius: 1px;
+    background: white;
+}
+.dnsReportFilterItem{
+    background: #FFFFFF;
+    border: 1px solid #169C6E;
+    border-radius: 1px;
+    padding: 0.8rem;
+    font-family: Avenir-Next, Arial;
+    color: #169C6E;
+    letter-spacing: 0;
+}
+.dnsDeleteFilter{
+    cursor: pointer;
+}
+.dnsReportQuestionNavigation .pagination .current, .dnsReportNavigation .pagination .current{
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: white;
+    background-color: #169C6E;
+    border-color: #169C6E;
+}
+.pagination .disabled .current {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+.pagination .prev{
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+.pagination .next{
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+.ellipse.clickable{
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+.dnsReportQuestionContainer .table thead th{
+    vertical-align: middle;
+}
+.dnsRespondentQuestionLine{
+    color: #169C6E;
+    font-family: Avenir-Next-Demi-Bold;
+}
+.dragnsurvey-background{
+    background-color: #169C6E;
+    color: white;
+}
+
+.dnsResultsEmptyState{
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.08);
+    border-radius: 1px;
+    background: white;
+}
+.dnsResultsEmptyState .card{
+    border: none;
+}
+.emptyStateHeader{
+    font-family: Avenir-Next-Demi-Bold;
+    font-size: 17px;
+    color: #169C6E;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+}
+.emptyStateContent{
+    font-family:  Gotham-Light;
+}
+.sirVemptyCollectors{
+    width: 151px;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+}
+.campaignActivityWrapper .dataTables_wrapper{
+    width: 100%;
+}
+.addressBookContainer .accordion > .card:first-of-type, .diffusionEmailContainer .accordion > .card:first-of-type, .campaignActivityWrapper .accordion > .card:first-of-type{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.collectorsTableWrapper table.dataTable{
+    margin-top: 0 !important;
+}
+.collector-created-dragon-party{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#collectorModal .modal-body{
+    position: initial;
+}
+.dnsResultsEmptyState .card{
+    height: 250px;
+}
+.sirVemptyResults{
+    width: 160px;
+    right: 3rem;
+    bottom: 0;
+}
+.breadcrumb-item a{
+    color: #169C6E;
+}
+    /*switch*/
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.page-item.active .page-link{
+    background-color: #169C6E;
+    border-color: #169C6E;
+}
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.offer-switch .slider{
+    background-color: #67A1F6;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #169C6E;;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #169C6E;;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.qrCodeContainer{
+    display: block;
+    margin:auto;
+}
+.diffusionrestrictionCard li{
+    list-style-type: none;
+}
+td.account-level-limit{
+    background: #C1DAFF !important;
+}
+.account-level-limit, .account-level-limit:hover, .account-level-limit:focus{
+    background: #C1DAFF !important;
+    color: black !important;
+    border: none;
+}
+.account-limit-border-top{
+    border-top: 5px solid #C1DAFF;
+}
+.account-level-limit .btn{
+    color: white !important;
+}
+.account-level-limit input:checked + .slider{
+    background-color: #67A1F6;
+}
+.upgrade-button{
+    background: #C1DAFF !important;
+    color: white !important;
+    border: none;
+    border: 5px;
+    font-family: Avenir-Next-Demi-Bold;
+}
+.dnsLimitAdvert{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top-right-radius: 1rem;
+    opacity: 0;
+    background: #C1DAFF;
+    z-index: 10000;
+    width: 100%
+}
+.dnsLimitStar{
+    background: white;
+    padding: 2rem;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    position: relative;
+}
+.dnsLimitStar svg{
+    display: block;
+    margin: auto;
+    position: relative;
+}
+.dnsLimitMain{
+    padding: 2rem;
+    font-family: Avenir-Next;
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 19px;
+}
+.limitAdvertTitle{
+    margin-bottom: 1rem;
+    font-family: Avenir-Next-Demi-Bold;
+    font-size: 24px;
+    color: rgba(0,0,0,0.85);
+    letter-spacing: 0;
+    line-height: 19px;
+}
+.dnsSubscribeBtn{
+    background: #67A1F6;
+    border-radius: 25px;
+    font-family: Avenir-Next-Demi-Bold;
+    font-size: 24px;
+    color: rgba(255,255,255,0.85);
+    letter-spacing: 0.9px;
+}
+.dnsLogoManager .dnsSubscribeBtn{
+    font-size: 17px;
+}
+.account-level-limit.link-limit {
+    background: none !important;
+    color: #649FF9 !important;
+}
+.account-level-limit.link-limit .downloadIcon{
+    color: #649FF9 !important;
+}
+dns-element{
+    background: #EBEFF2;
+}
+
+dns-element[name="calculator"]{
+    background: #EBEFF2;
+}
+
+dns-element[name="answer"]{
+    background: #DFA674;
+}
+
+.addressBookContainer{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.08);
+    border-radius: 1px;
+}
+
+footer{
+    background: #405A65;
+}
+footer p, footer a, footer a:hover, footer a:visited{
+    font-family: Avenir-Next, Arial;
+    font-size: 15px;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 0.7);
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer h3{
+    font-family: Avenir-Next-Demi-Bold, Arial;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+.vdivide{
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.footerHead{
+    font-family: Avenir-Next-Demi-Bold, Arial;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height, or 138% */
+    color: #FFFFFF;
+}
+
+.itemsContainer .d-none{
+    display: none !important;
+}
+
+
+.loginCard{
+    background: #FFFFFF;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.0924479);
+    border-radius: 1px;
+}
+.login-header{
+    font-family: Avenir-Next-Demi-Bold;
+    font-size: 35px;
+    line-height: 48px;
+    /* identical to box height, or 137% */
+
+    text-align: center;
+
+    color: #434343;
+}
+
+.betaWarning{
+    font-family: Avenir-Next;
+    font-size: 20px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+    text-align: center;
+
+    color: #000000;
+}
+
+img.computerLoginDragon {
+    position: absolute;
+    right: 0;
+    bottom: -14.5rem;
+}
+
+textarea[name="writeContactList"]{
+    overflow-y: hidden;
+    resize: none;
+}
+
+/* HELP CENTER */
+#helpCenterContent{
+    background: white;
+    border-top: 5px solid  #169C6E;
+}
+.helpCenterCategoryTitle{
+    font-size: 51px;
+    line-height: 60px;
+    color: #169C6E;
+    margin-top: 3rem;
+}
+.helpCenterHeader{
+    font-size: 34px;
+    line-height: 35px;
+    color: #0E0E0E;
+    margin-top: 5rem;
+}
+.helpCenterBody{
+    margin-top: 3rem;
+}
+.wrapper-help-center #sidebar{
+    background: #F5F8FA;
+}
+.help-center-sidebar .nav-link{
+    padding: 0;
+}
+.help-center-sidebar a, .help-center-sidebar a:hover, .help-center-sidebar a:focus{
+    color: #757474;
+}
+.help-center-sidebar .active{
+    color: #169C6E !important;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    background: none;
+    color: inherit;
+}
+
+.help-center-main-nav-link, .help-center-sidebar .navbar-brand{
+    font-size: 16px;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+.helpCenterBodyHeading{
+    font-size: 24px;
+    line-height: 35px;
+    color: #169C6E;
+    margin-top: 3rem;
+}
+
+.dnsSpectrum{
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    font-family: Avenir-Nex;
+}
+
+.dnsSpectrum button{
+    background: #169C6E;
+    color: white;
+    font-family: Avenir-Next-Demi-Bold;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.dnsSpectrum .sp-cancel{
+    font-size: 14px;
+    font-family: Avenir-Next-Demi-Bold;
+}
+
+.dnsSpectrum .sp-palette-button-container{
+    margin-top: 1rem;
+}
+.btn-dragnsurvey.btn-lg{
+    font-size: 1.125rem;
+}
+
+.pricingContainer h1, .listenHeader{
+    font-family: Avenir-Next-Demi-Bold;
+    font-size: 35px;
+}
+.pricingContainer .card{
+    border: none;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.09);
+}
+.pricingContainer .card.premiumPlanCard{
+    background: #E6F0FF;
+}
+.pricingRecurrence{
+    font-size: 24px;
+}
+.pricingEggsContainer img {
+    top: -72px;
+    margin: auto;
+    display: block;
+    margin-top: -35px;
+}
+.premiumPlanCard .pricingEggsContainer {
+    margin-top: -18px;
+}
+.pricing .card-title{
+    font-family: Avenir-Next-Demi-Bold;
+    font-size: 24px;
+}
+.planPrice{
+    color: #67A1F6;
+    font-size: 52px;
+}
+.pricing .period{
+    color: #798693;
+}
+.planFunctionalitiesList .fa-li{
+    color: #67A1F6;
+}
+.freePlanCard .planFunctionalitiesList .fa-li{
+    color: #169C6E;
+}
+.planFunctionalitiesList li{
+    margin-bottom: 0.5rem;
+}
+.btn.btn-dragnsurvey-upgrade{
+    background: #67A1F6;
+    box-shadow: 0px 9px 23px rgba(103, 161, 246, 0.35);
+    color: white;
+    font-family: Avenir-Next-Demi-Bold;
+}
+.btn.btn-dragnsurvey-upgrade:hover{
+    background: #0948a4;
+}
+.bckgWhite{
+    background: white;
+}
+.contactHeadset{
+    position: absolute;
+    top: -17px;
+    right: 32px;
+}
+.rgpdCollectData{
+    font-size: smaller;
+    font-style: italic;
+}
+
+.contactUsContainer h1{
+    font-family: Avenir-Next-Demi-Bold;
+    font-size: 35px;
+}
+.contactUsContainer h2{
+    font-family: Avenir-Next-Demi-Bold;
+    font-size: 20px;
+}
+.contactUsContainer .socialIcons a{
+    font-size: 2rem;
+}
+.contactUsContainer textarea{
+    min-height: 200px;
+}
+.upgradeHeaderBtn{
+    margin-top: 0.5rem;
+}
+.passwordCriteriaValidated{
+    color: #169C6E;
+}
+.passwordCriteriaValidated .textCheck{
+    text-decoration: line-through;
+}
+.takeOff{
+    font-family: Avenir-Next-Demi-Bold;
+    font-size: 42px;
+}
+.registerContainer h1{
+    font-size: 35px;
+}
+.registerContainer .profile{
+    font-size: 18px;
+}
+.startingPlanChoice{
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.14);
+    border-radius: 86px;
+}
+.freeTrial{
+    color: #169C6E;
+    font-size: 12px;
+}
+
+/* This is the checked state */
+.registerChoosePlanWrapper .custom-radio .custom-control-input:checked~.custom-control-label::before,
+.registerChoosePlanWrapper .custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background-color: #169C6E;  /* green */
+    /* this bg image SVG is just a white circle, you can replace it with any valid SVG code */
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E");
+    border-radius: 50%;
+}
+
+/* active state i.e. displayed while the mouse is being pressed down */
+.registerChoosePlanWrapper .custom-radio .custom-control-input:active ~ .custom-control-label::before {
+    color: #fff;
+    background-color: #169C6E; /* red */
+}
+
+/* the shadow; displayed while the element is in focus */
+.registerChoosePlanWrapper .custom-radio .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(255, 123, 255, 0.25); /* pink, 25% opacity */
+}
+.dns_logo_connect a{
+    width: 215px !important;
+}
+.registerCloud1{
+    position: absolute;
+    top: 194px;
+}
+
+.registerCloud2{
+    position: absolute;
+    top: 94px;
+    right: 0;
+}
+.registerBird{
+    position: absolute;
+    right: 5%;
+    top: 134px;
+}
+.registerDragon {
+    position: absolute;
+    bottom: -11.45%;
+    z-index: -1;
+    left: -6%;
+}
+
+.startingPlanChoice label{
+    font-family: Gotham-Bold;
+    font-size: 14px;
+}
+
+.gladToSeeYou{
+    font-family: Avenir-Next-Demi-Bold;
+    font-size: 35px;
+}
+.loginContainer h1{
+    font-size: 24px;
+}
+
+.loginDragon{
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+
+.passwordContainer h1{
+    font-family: Avenir-Next-Demi-Bold;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+
+.tooltip-main {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-weight: 700;
+    background: #f3f3f3;
+    border: 1px solid #737373;
+    color: #737373;
+    margin: 4px 121px 0 5px;
+    float: right;
+    text-align: left !important;
+}
+
+.tooltip-qm {
+    float: left;
+    margin: -2px 0px 3px 4px;
+    font-size: 12px;
+}
+
+.tooltip-inner {
+    max-width: 236px !important;
+    font-size: 12px;
+    padding: 1rem;
+    background: #FFFFFF;
+    color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #737373;
+    text-align: left;
+}
+
+.tooltip.show {
+    opacity: 1;
+}
+
+.socialLoginButton{
+    background: #FBFCFC;
+    border: 1px solid #C3C3C3;
+    box-sizing: border-box;
+    border-radius: 49px;
+    padding: 0.5rem 1rem;
+}
+.socialLoginButton .brandIcon{
+    font-size: 1.5rem;
+}
+[data-delete-template]{
+    cursor: pointer;
+}
+
+.space-container{
+    background: url('../img/errors/404/404_background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a.dnsColorLink , a:hover.dnsColorLink , a:focus.dnsColorLink , a:visited.dnsColorLink {
+    color: #169C6E;
+}
+.dnsColor{
+    color: #169C6E;
+}
+.robot-container{
+    background: url('../img/errors/500/500_background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.list-inline-item.pageTab{
+    margin-right: 0;
+}
